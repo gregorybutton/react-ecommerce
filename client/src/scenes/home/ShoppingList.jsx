@@ -20,8 +20,7 @@ const ShoppingList = () => {
 
   async function getItems() {
     const items = await fetch(
-      // "http://localhost:1337/api/items?populate=image",
-      "https://react-ecommerce-83n.pages.dev/api/items?populate=image",
+      "http://localhost:1337/api/items?populate=image",
       { method: "GET" }
     );
     const itemsJson = await items.json();
